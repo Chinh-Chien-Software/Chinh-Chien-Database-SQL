@@ -15,7 +15,7 @@ CREATE TABLE NhanVien
   NgaySinh DateTime,
   SoDienThoai VARCHAR(13),
   DiaChi NVARCHAR(40),
-  LoaiNhanVien INT,
+  LoaiNhanVien varchar(10),
   CONSTRAINT PK_NhanVien_MaNhanVien PRIMARY KEY (MaNhanVien)
 )
 GO
