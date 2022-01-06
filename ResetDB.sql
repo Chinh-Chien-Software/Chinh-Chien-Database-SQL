@@ -9,4 +9,8 @@ DROP TABLE Menu
 DROP TABLE HoaDon
 DROP TABLE DanhSachHoaDon
 
+-- Delete Records
+DELETE FROM NhanVien
+
+
 --DROP TABLE BaoCao => Make it as a View
