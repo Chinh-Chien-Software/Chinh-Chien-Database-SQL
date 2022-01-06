@@ -101,14 +101,14 @@ MaSanPham,
 TenSanPham,
 CongThuc,
 ThanhPhan,
-DanhGia,
-Gia,
+DanhGia, -- 1 => 5 sao
+Gia --đ/ly
 )
-values('51','Macha','CongThuc','ThanhPhan','DanhGia','350000đ/ly'),
-('16','TraSua','CongThuc','ThanhPhan','DanhGia','30000đ/ly'),
-('91','BacSiu','CongThuc','ThanhPhan','DanhGia','30000đ/ly'),
-('86','KemTraiCay','CongThuc','ThanhPhan','DanhGia','50000đ/ly'),
-('47','SinhTo','CongThuc','ThanhPhan','DanhGia','40000đ/ly'),
+values('51','Macha','CongThuc','ThanhPhan','5','350000'),
+('16','TraSua','CongThuc','ThanhPhan','5','30000'),
+('91','BacSiu','CongThuc','ThanhPhan','5','30000'),
+('86','KemTraiCay','CongThuc','ThanhPhan','5','50000'),
+('47','SinhTo','CongThuc','ThanhPhan','5','40000')
 GO
 
 Insert into Menu (
