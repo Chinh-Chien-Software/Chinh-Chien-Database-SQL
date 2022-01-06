@@ -104,11 +104,12 @@ ThanhPhan,
 DanhGia, -- 1 => 5 sao
 Gia --đ/ly
 )
-values('51','Macha','CongThuc','ThanhPhan','5','350000'),
-('16','TraSua','CongThuc','ThanhPhan','5','30000'),
-('91','BacSiu','CongThuc','ThanhPhan','5','30000'),
-('86','KemTraiCay','CongThuc','ThanhPhan','5','50000'),
-('47','SinhTo','CongThuc','ThanhPhan','5','40000')
+values
+('51','Macha','Cong Thuc','Thanh Phan','5','350000'),
+('16','Trà Sửa','Cong Thuc','Thanh Phan','5','30000'),
+('91','Bac Siu','Cong Thuc','Thanh Phan','5','30000'),
+('86','Kem Trai Cay','Cong Thuc','Thanh Phan','5','50000'),
+('47','Sinh To','Cong Thuc','Thanh Phan','5','40000')
 GO
 
 Insert into Menu (
