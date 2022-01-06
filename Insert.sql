@@ -35,17 +35,17 @@ DiaChi,
 LoaiNhanVien
 )
 values
-('1235','Tung', '123456789','15000','20180216','nam','20000425', '0816148776',
+('1235','Tung', 'thungan','15000','20180216','nam','20000425','0816148776',
 '362 Truong Cong Dinh',   
 'thungan'
 ),
-('1354','Ngan', '123456789','18000','20180326','nu', '19990525', '0542136161',
+('1354','Ngan', 'quanly1','18000','20180326','nu', '19990525','0542136161',
 '46 Hoang Hoa Tham',      
 'quanly'
 ),
-('1563','Thu',  '123456789','15000','20180120','nu', '20000612','0654782153',
+('1563','Thu',  'phache','15000','20180120','nu', '20000612','0654782153',
 '491 Ton Sach',           
-'phuc vu'
+'phache'
 ),
 ('4192','Trung','123456789','20000','27/06/2018','nam','16/08/1996','0541278961',
 '45/12 Nguyen Binh Khiem',
@@ -63,11 +63,21 @@ MatKhau,
 LoaiTaiKhoan
 )
 values
-('chuquan','cq'),
-('quanly1','ql'),
-('thungan','tn'),
-('phache', 'pc'),
-('quanly2','ql')
+('chuquan','cq',
+'chuquan'
+),
+('quanly1','ql',
+'quanly'
+),
+('thungan','tn'
+'thungan', 
+),
+('phache', 'pc', 
+'phache'
+),
+('quanly2','ql'
+'quanly', 
+)
 
 GO
 insert into LichLam
