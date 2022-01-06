@@ -48,10 +48,10 @@ CREATE TABLE VatLieu
 GO
 CREATE TABLE SanPham
 (
-    MaSanPham NVARCHAR,
-    TenSanPham NVARCHAR,
-    CongThuc NVARCHAR,
-    ThanhPhan NVARCHAR,
+    MaSanPham VARCHAR(3),
+    TenSanPham NVARCHAR(40),
+    CongThuc VARCHAR(100),
+    ThanhPhan NVARCHAR(100),
     DanhGia INT,
     Gia FLOAT,
     CONSTRAINT PK_SanPham_MaSanPham PRIMARY KEY (MaSanPham)
