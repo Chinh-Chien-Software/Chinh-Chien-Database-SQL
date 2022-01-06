@@ -73,13 +73,3 @@ CREATE TABLE KhoHang
     CONSTRAINT PK_KhoHang_MaKho PRIMARY KEY (MaKho) 
 )
 GO
-CREATE TABLE BaoCao
-(
-    MaBaoCao NVARCHAR,
-    DoanhThu FLOAT,
-    GiaVonHangBan FLOAT,
-    LoiNhuanGop FLOAT,
-    ThuNhap FLOAT,
-    LoiNhuan FLOAT,
-    CONSTRAINT PK_BaoCao_MaBaoCao PRIMARY KEY (MaBaoCao)
-)
