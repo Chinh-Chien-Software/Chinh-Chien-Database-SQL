@@ -53,7 +53,7 @@ CREATE TABLE SanPham
     CongThuc VARCHAR(100),
     ThanhPhan NVARCHAR(100),
     DanhGia INT,
-    Gia FLOAT,
+    Gia INT,
     CONSTRAINT PK_SanPham_MaSanPham PRIMARY KEY (MaSanPham)
 )
 GO
@@ -73,3 +73,17 @@ CREATE TABLE KhoHang
     CONSTRAINT PK_KhoHang_MaKho PRIMARY KEY (MaKho) 
 )
 GO
+CREATE TABLE HoaDon 
+(
+	MaHoaDon VARCHAR(10),
+	MaNhanVien VARCHAR(4),
+	ThoiGianGiaoDich DATETIME,
+	TongTien INT,
+	CONSTRAINT PK_HoaDon_MaHoaDon PRIMARY KEY (MaHoaDon)
+)
+Go
+CREATE TABLE DanhSachHoaDon
+(
+	MaSanPham VARCHAR(3),
+	MaHoaDon VARCHAR(10)
+)
