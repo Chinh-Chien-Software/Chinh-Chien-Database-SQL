@@ -82,8 +82,9 @@ CREATE TABLE HoaDon
 	CONSTRAINT PK_HoaDon_MaHoaDon PRIMARY KEY (MaHoaDon)
 )
 Go
-CREATE TABLE DanhSachHoaDon
+CREATE TABLE ThongTinHoaDon
 (
 	MaSanPham VARCHAR(3),
-	MaHoaDon VARCHAR(10)
+	MaHoaDon VARCHAR(10),
+	SoLuong INT
 )

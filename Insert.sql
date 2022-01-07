@@ -141,3 +141,5 @@ values(
 ),
 GO
 
+INSERT INTO DanhSachHoaDon
+
