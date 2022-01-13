@@ -1,26 +1,6 @@
 USE QuanLyQuanTraSua
 GO
 
---Test Insert 1 Record
-INSERT into NhanVien (
-MaNhanVien, 
-TenNhanVien, 
-TenTaiKhoan, 
-LuongTrenGio, 
-NgayVaoLam, 
-GioiTinh,
-NgaySinh,
-SoDienThoai,
-DiaChi,
-LoaiNhanVien
-)
-values
-('1235','Tung', '1234567890','15000','20180216','nam','25/4/2000', '0816148776',
-'362 Truong Cong Dinh',   
-'1'
-)
-GO
-
 -- Insert Lượng Lớn
 insert into NhanVien (
 MaNhanVien, 
@@ -35,15 +15,15 @@ DiaChi,
 LoaiNhanVien
 )
 values
-('1235','Tung', 'thungan','15000','20180216','nam','20000425','0816148776',
+('1235','Tung', 'thungan','15000','2018-02-16','nam','2000-04-25','0816148776',
 '362 Truong Cong Dinh',   
 'thungan'
 ),
-('1354','Ngan', 'quanly1','18000','20180326','nu', '19990525','0542136161',
+('1354','Ngan', 'quanly1','18000','2018-03-26','nu', '1999-05-25','0542136161',
 '46 Hoang Hoa Tham',      
 'quanly'
 ),
-('1563','Thu',  'phache','15000','20180120','nu', '20000612','0654782153',
+('1563','Thu',  'phache','15000','2018-01-20','nu', '2000-06-12','0654782153',
 '491 Ton Sach',           
 'phache'
 ),
@@ -69,14 +49,14 @@ values
 ('quanly1','ql',
 'quanly'
 ),
-('thungan','tn'
-'thungan', 
+('thungan','tn',
+'thungan' 
 ),
 ('phache', 'pc', 
 'phache'
 ),
-('quanly2','ql'
-'quanly', 
+('quanly2','ql',
+'quanly' 
 )
 
 GO
@@ -140,6 +120,22 @@ values(
 '4edddbaa8a','ChinChin3','49/15 Nguyen Binh Khiem','100m^2'
 ),
 GO
-
-INSERT INTO DanhSachHoaDon
+INSERT INTO HoaDon (
+MaHoaDon,
+MaNhanVien,
+ThoiGianGiaoDich)
+VALUES (
+'HD00000001', '1235', '20200909 10:34:09 AM'),
+('HD00000002', '1354','20200909 10:00:09 AM'),
+('HD00000003', '1563' ,'20200909 11:00:09 AM'
+)
+Go
+INSERT INTO ThongTinHoaDon (
+MaSanPham,
+MaHoaDon,
+SoLuong )
+VALUES ('16', ''),
+('16', ''),
+('16', '')
+GO
 

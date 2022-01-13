@@ -7,7 +7,7 @@ DROP TABLE VatLieu
 DROP TABLE SanPham
 DROP TABLE Menu
 DROP TABLE HoaDon
-DROP TABLE DanhSachHoaDon
+DROP TABLE ThongTinHoaDon
 
 -- Delete Records
 DELETE FROM NhanVien

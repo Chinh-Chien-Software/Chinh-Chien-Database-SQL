@@ -21,7 +21,7 @@ CREATE TABLE NhanVien
 GO
 CREATE TABLE TaiKhoan
 (
-  TenTaiKhoan NVARCHAR,
+  TenTaiKhoan NVARCHAR(),
   MatKhau NVARCHAR,
   LoaiTaiKhoan NVARCHAR,
   CONSTRAINT PK_TaiKhoan_TenTaiKhoan PRIMARY KEY (TenTaiKhoan)
@@ -78,7 +78,7 @@ CREATE TABLE HoaDon
 	MaHoaDon VARCHAR(10),
 	MaNhanVien VARCHAR(4),
 	ThoiGianGiaoDich DATETIME,
-	TongTien INT,
+	-- TongTien INT,
 	CONSTRAINT PK_HoaDon_MaHoaDon PRIMARY KEY (MaHoaDon)
 )
 Go
