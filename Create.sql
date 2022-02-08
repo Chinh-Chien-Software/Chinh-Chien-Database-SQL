@@ -66,9 +66,9 @@ CREATE TABLE Menu
 GO
 CREATE TABLE KhoHang
 (
-    MaKho NVARCHAR,
-    TenKho NVARCHAR,
-    DiaChi NVARCHAR,
+    MaKho NVARCHAR(10),
+    TenKho NVARCHAR(40),
+    DiaChi NVARCHAR(100),
     DienTich FLOAT,
     CONSTRAINT PK_KhoHang_MaKho PRIMARY KEY (MaKho) 
 )

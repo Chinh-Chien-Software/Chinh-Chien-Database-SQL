@@ -94,31 +94,31 @@ GO
 
 Insert into Menu (
   PhienBan,
-  NgayCapNhat,
+  NgayCapNhat
 )
 values('#871f2f','25/05/2016'),
 ('#54d565','15/04/2018'),
 ('#a0cf26','13/06/2018'),
 ('#2c2ff4','28/02/2019'),
 ('#315d27','24/08/2019'),
-('#e0ccce','28/12/2020'),
-GO
+('#e0ccce','28/12/2020')
 
+GO
 Insert into KhoHang (
   Makho,
   TenKho,
   DiaChi,
-  DienTich,
+  DienTich
 )
 values(
-'16862eae87','ChinChin1','F4 Huyen Tran Cong Chua','60m^2'
+'16862eae87','ChinChin1','F4 Huyen Tran Cong Chua','60'
 ),
 (
-'711c784dd1','ChinChin2','282 Truong Cong Dinh','75m^2'
+'711c784dd1','ChinChin2','282 Truong Cong Dinh','75'
 ),
 (
-'4edddbaa8a','ChinChin3','49/15 Nguyen Binh Khiem','100m^2'
-),
+'4edddbaa8a','ChinChin3','49/15 Nguyen Binh Khiem','100'
+)
 GO
 INSERT INTO HoaDon (
 MaHoaDon,

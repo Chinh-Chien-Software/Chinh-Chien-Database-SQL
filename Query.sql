@@ -6,4 +6,4 @@ SELECT * FROM VatLieu
 SELECT * FROM HoaDon
 SELECT * FROM SanPham
 SELECT * FROM Menu
-SELECT * FROM DanhSachHoaDon 
+-- SELECT * FROM DanhSachHoaDon
