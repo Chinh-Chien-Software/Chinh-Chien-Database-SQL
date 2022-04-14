@@ -1,32 +1,37 @@
-CREATE DATABASE QuanLyQuanTraSua
+CREATE DATABASE ChinhChien
 GO
 
-USE QuanLyQuanTraSua
+USE ChinhChien
 GO
 
 CREATE TABLE NhanVien
 (
-  MaNhanVien VARCHAR(4),
+  MaNhanVien CHAR(4),
   TenNhanVien NVARCHAR(40),
-  TenTaiKhoan VARCHAR(10),
+  TenTaiKhoan CHAR(10),
   LuongTrenGio INT,
   NgayVaoLam DateTime,
-  GioiTinh VARCHAR(3),
+  GioiTinh CHAR(3),
   NgaySinh DateTime,
   SoDienThoai VARCHAR(13),
   DiaChi NVARCHAR(40),
   LoaiNhanVien varchar(10),
   CONSTRAINT PK_NhanVien_MaNhanVien PRIMARY KEY (MaNhanVien)
+  CHECK
 )
 GO
+
 CREATE TABLE TaiKhoan
 (
-  TenTaiKhoan NVARCHAR(10),
+  TenTaiKhoan CHAR(10),
   MatKhau VARCHAR(10),
   LoaiTaiKhoan NVARCHAR(10),
-  CONSTRAINT PK_TaiKhoan_TenTaiKhoan PRIMARY KEY (TenTaiKhoan)
+  MaNhanVien CHAR(4),
+  CONSTRAINT PK_TenTaiKhoan PRIMARY KEY (TenTaiKhoan),
+  CONSTRAINT FK_NhanVien_MaNhanVien FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien)
 )
 GO
+
 CREATE TABLE LichLam
 (
     MaLich NVARCHAR,
@@ -35,6 +40,7 @@ CREATE TABLE LichLam
     CONSTRAINT PK_LichLam_MaLich PRIMARY KEY (MaLich)
 )
 GO
+
 CREATE TABLE VatLieu
 (
     MaVatLieu NVARCHAR,
@@ -46,6 +52,7 @@ CREATE TABLE VatLieu
     CONSTRAINT PK_VatLieu_MaVatLieu PRIMARY KEY (MaVatLieu)
 )
 GO
+
 CREATE TABLE SanPham
 (
     MaSanPham VARCHAR(3),
@@ -57,6 +64,7 @@ CREATE TABLE SanPham
     CONSTRAINT PK_SanPham_MaSanPham PRIMARY KEY (MaSanPham)
 )
 GO
+
 CREATE TABLE Menu
 (
     PhienBan NVARCHAR,
@@ -64,6 +72,7 @@ CREATE TABLE Menu
     CONSTRAINT PK_Menu_PhienBan PRIMARY KEY (PhienBan)
 )
 GO
+
 CREATE TABLE KhoHang
 (
     MaKho NVARCHAR(10),
@@ -73,6 +82,7 @@ CREATE TABLE KhoHang
     CONSTRAINT PK_KhoHang_MaKho PRIMARY KEY (MaKho) 
 )
 GO
+
 CREATE TABLE HoaDon 
 (
 	MaHoaDon VARCHAR(10),
@@ -82,6 +92,7 @@ CREATE TABLE HoaDon
 	CONSTRAINT PK_HoaDon_MaHoaDon PRIMARY KEY (MaHoaDon)
 )
 Go
+
 CREATE TABLE ThongTinHoaDon
 (
 	MaSanPham VARCHAR(3),
