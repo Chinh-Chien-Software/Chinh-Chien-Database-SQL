@@ -39,7 +39,7 @@ GO
 insert into TaiKhoan (
 TenTaiKhoan,
 MatKhau,
-LoaiTaiKhoan
+LoaiTaiKhoan,
 )
 values
 ('chuquan','cq',

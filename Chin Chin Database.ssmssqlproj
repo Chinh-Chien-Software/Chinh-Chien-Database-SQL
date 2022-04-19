@@ -25,11 +25,11 @@
           <AssociatedConnUserName />
           <FullPath>Create.sql</FullPath>
         </FileNode>
-        <FileNode Name="Insert.sql">
+        <FileNode Name="First-Insert.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>Insert.sql</FullPath>
+          <FullPath>First-Insert.sql</FullPath>
         </FileNode>
         <FileNode Name="main.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
@@ -48,6 +48,12 @@
           <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>ResetDB.sql</FullPath>
+        </FileNode>
+        <FileNode Name="TestQuery.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>TestQuery.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
