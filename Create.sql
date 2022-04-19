@@ -16,8 +16,8 @@ CREATE TABLE NhanVien
   SoDienThoai VARCHAR(13),
   DiaChi NVARCHAR(40),
   LoaiNhanVien varchar(10),
-  CONSTRAINT PK_NhanVien_MaNhanVien PRIMARY KEY (MaNhanVien)
-  CHECK
+  CONSTRAINT PK_NhanVien_MaNhanVien PRIMARY KEY (MaNhanVien),
+  CONSTRAINT CK_GT CHECK (GioiTinh = 'Nam' OR GioiTinh = 'Nu')
 )
 GO
 
