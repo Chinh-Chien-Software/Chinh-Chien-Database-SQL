@@ -3,11 +3,10 @@ GO
 
 -- Insert Lượng Lớn
 insert into NhanVien (
-MaNhanVien, 
-TenNhanVien, 
-TenTaiKhoan, 
-LuongTrenGio, 
-NgayVaoLam, 
+MaNhanVien,
+TenNhanVien,
+LuongTrenGio,
+NgayVaoLam,
 GioiTinh,
 NgaySinh,
 SoDienThoai,
@@ -15,23 +14,23 @@ DiaChi,
 LoaiNhanVien
 )
 values
-('1235','Tung', 'thungan','15000','2018-02-16','nam','2000-04-25','0816148776',
+('1235','Tung', '15000','2018-02-16','nam','2000-04-25','0816148776',
 '362 Truong Cong Dinh',   
 'thungan'
 ),
-('1354','Ngan', 'quanly1','18000','2018-03-26','nu', '1999-05-25','0542136161',
+('1354','Ngan', '18000','2018-03-26','nu', '1999-05-25','0542136161',
 '46 Hoang Hoa Tham',      
 'quanly'
 ),
-('1563','Thu',  'phache','15000','2018-01-20','nu', '2000-06-12','0654782153',
+('1563','Thu',  '15000','2018-01-20','nu', '2000-06-12','0654782153',
 '491 Ton Sach',           
 'phache'
 ),
-('4192','Trung','123456789','20000','27/06/2018','nam','16/08/1996','0541278961',
+('4192','Trung', '20000','27/06/2018','nam','16/08/1996','0541278961',
 '45/12 Nguyen Binh Khiem',
 'quan ly'
 ),
-('5214','thinh','123456789','15000','14/09/2018','nam','11/04/2001','0475963214',
+('5214','thinh', '15000','14/09/2018','nam','11/04/2001','0475963214',
 '78 Trung Truc',          
 'phuc vu'
 )

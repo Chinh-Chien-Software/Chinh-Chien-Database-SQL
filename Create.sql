@@ -8,7 +8,6 @@ CREATE TABLE NhanVien
 (
   MaNhanVien CHAR(4),
   TenNhanVien NVARCHAR(40),
-  TenTaiKhoan CHAR(10),
   LuongTrenGio INT,
   NgayVaoLam DateTime,
   GioiTinh CHAR(3),
