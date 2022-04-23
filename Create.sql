@@ -44,12 +44,12 @@ GO
 
 CREATE TABLE VatLieu
 (
-    MaVatLieu NVARCHAR,
-    TenVatLieu NVARCHAR,
-    NhaCungCap NVARCHAR,
+    MaVatLieu VARCHAR(4),
+    TenVatLieu NVARCHAR(30),
+    NhaCungCap NVARCHAR(30),
     SoLuong INT,
     Gia FLOAT,
-    DonViTinh NVARCHAR,
+    DonViTinh NVARCHAR(10),
     CONSTRAINT PK_VatLieu_MaVatLieu PRIMARY KEY (MaVatLieu)
 )
 GO

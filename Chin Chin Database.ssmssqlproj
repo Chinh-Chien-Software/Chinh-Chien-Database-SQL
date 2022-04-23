@@ -25,6 +25,12 @@
           <AssociatedConnUserName />
           <FullPath>Create.sql</FullPath>
         </FileNode>
+        <FileNode Name="CreateDB_Script_By_SSMS.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>CreateDB_Script_By_SSMS.sql</FullPath>
+        </FileNode>
         <FileNode Name="First-Insert.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
