@@ -1,4 +1,4 @@
-SELECT * FROM NhanVien 
+SELECT * FROM NhanVien
 SELECT * FROM TaiKhoan
 SELECT * FROM LichLam
 SELECT * FROM KhoHang
