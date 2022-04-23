@@ -4,7 +4,7 @@ USE ChinhChien
 GO
 
 -- Insert Lượng Lớn
-insert into NhanVien (
+insert into ChinhChien.dbo.NhanVien (
 MaNhanVien,
 TenNhanVien,
 LuongTrenGio,
@@ -16,30 +16,25 @@ DiaChi,
 LoaiNhanVien
 )
 values
-('1235','Tung', '15000','2018-02-16','Nam','2000-04-25','0816148776',
-'362 Truong Cong Dinh', 
+('1235','Tung', '15000', '20180216','Nam','20000425','0816148776', '362 Truong Cong Dinh',
 'thungan'
 ),
-('1354','Ngan', '18000','2018-03-26','Nu', '1999-05-25','0542136161',
-'46 Hoang Hoa Tham', 
+('1354','Ngan', '18000', '20180326','Nu', '19990525','0542136161', '46 Hoang Hoa Tham', 
 'quanly'
 ),
-('1563','Thu',  '15000','2018-01-20','Nu', '2000-06-12','0654782153',
-'491 Ton Sach',
+('1563','Thu',  '15000', '20180120','Nu', '20000612','0654782153', '491 Ton Sach',
 'phache'
 ),
-('4192','Trung', '20000','27/06/2018','Nam','16/08/1996','0541278961',
-'45/12 Nguyen Binh Khiem',
+('4192','Trung', '20000','20180627','Nam','19960816','0541278961', '45/12 Nguyen Binh Khiem',
 'quanly'
 ),
-('5214','thinh', '15000','14/09/2018','Nam','11/04/2001','0475963214',
-'78 Trung Truc', 
+('5214','thinh', '15000','20180914','Nam','20011104','0475963214', '78 Trung Truc', 
 'phucvu'
 )
 
 GO
 
-insert into TaiKhoan (
+insert into ChinhChien.dbo.TaiKhoan (
 TenTaiKhoan,
 MatKhau,
 LoaiTaiKhoan
@@ -62,7 +57,7 @@ values
 )
 
 GO
-insert into LichLam
+insert into ChinhChien.dbo.LichLam
 values ('1877a0f84b35a698c87fb47db0920100','29','29'),
 ('0939adf3fb6225e811802184fe26c79a','28','28'),
 ('ed521923fbb40621dc250517cc0c9e0e','27','27'),
@@ -70,7 +65,7 @@ values ('1877a0f84b35a698c87fb47db0920100','29','29'),
 ('693b363e987a38515fb07a063706dab9','25','25')
 
 GO
-insert into VatLieu
+insert into ChinhChien.dbo.VatLieu
 values
 ('T254','Sua bo','Long Thanh','1000','800000','VND'),
 ('S241','Tran Trau','Chin Chin','100000','7500000','VND'),
