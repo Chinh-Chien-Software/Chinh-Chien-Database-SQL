@@ -1,7 +1,7 @@
 CREATE DATABASE ChinhChien
 GO
 
-USE ChinhChien
+USE ChinhChienVPS
 GO
 
 CREATE TABLE NhanVien
@@ -20,15 +20,13 @@ CREATE TABLE NhanVien
 )
 GO
 
-CREATE TABLE TaiKhoan
+CREATE TABLE ChinhChienVPS.dbo.TaiKhoan
 (
-  TenTaiKhoan CHAR(10),
+  TenTaiKhoan VARCHAR(10),
   MatKhau VARCHAR(10),
   LoaiTaiKhoan NVARCHAR(10),
-  MaNhanVien CHAR(4),
   UIMode INT,
   CONSTRAINT PK_TenTaiKhoan PRIMARY KEY (TenTaiKhoan),
-  CONSTRAINT FK_NhanVien_MaNhanVien FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien),
   CONSTRAINT CK_UIMODE CHECK (UIMode >= 0 and UIMode <=2) -- 0 is Light Mode, 1 is Dark Mode, 2 is follow System Setting
 )
 GO
