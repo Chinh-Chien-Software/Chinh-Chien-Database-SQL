@@ -1,11 +1,11 @@
-SELECT * FROM ChinhChien.dbo.NhanVien
-SELECT * FROM ChinhChien.dbo.TaiKhoan
-SELECT * FROM ChinhChien.dbo.LichLam
-SELECT * FROM ChinhChien.dbo.KhoHang
-SELECT * FROM ChinhChien.dbo.VatLieu
-SELECT * FROM ChinhChien.dbo.HoaDon
-SELECT * FROM ChinhChien.dbo.SanPham
-SELECT * FROM ChinhChien.dbo.Menu
+SELECT * FROM ChinhChienVPS.dbo.NhanVien
+SELECT * FROM ChinhChienVPS.dbo.TaiKhoan
+SELECT * FROM ChinhChienVPS.dbo.LichLam
+SELECT * FROM ChinhChienVPS.dbo.KhoHang
+SELECT * FROM ChinhChienVPS.dbo.VatLieu
+SELECT * FROM ChinhChienVPS.dbo.HoaDon
+SELECT * FROM ChinhChienVPS.dbo.SanPham
+SELECT * FROM ChinhChienVPS.dbo.Menu
 -- SELECT * FROM DanhSachHoaDon
 GO
 -- Lay Ten Nhan Vien tu Ten Tai Khoan va Mat Khau

@@ -3,57 +3,75 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="DESKTOP-AN8O8G6\TQK:DESKTOP-AN8O8G6\taqua">
-          <Created>2022-02-08T15:53:09.7058638+07:00</Created>
+        <ConnectionNode Name="20.211.185.211:sa">
+          <Created>2022-04-29T11:21:28.5133544+07:00</Created>
           <Type>SQL</Type>
-          <Server>DESKTOP-AN8O8G6\TQK</Server>
-          <UserName />
-          <Authentication>Windows Authentication</Authentication>
-          <InitialDB>QuanLyQuanTraSua</InitialDB>
+          <Server>20.211.185.211</Server>
+          <UserName>sa</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
           <LoginTimeout>30</LoginTimeout>
           <ExecutionTimeout>0</ExecutionTimeout>
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+          <ApplicationName />
         </ConnectionNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="Create.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:20.211.185.211:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>20.211.185.211</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>Create.sql</FullPath>
         </FileNode>
         <FileNode Name="CreateDB_Script_By_SSMS.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>CreateDB_Script_By_SSMS.sql</FullPath>
         </FileNode>
         <FileNode Name="First-Insert.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:20.211.185.211:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>20.211.185.211</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>First-Insert.sql</FullPath>
         </FileNode>
         <FileNode Name="main.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>main.sql</FullPath>
         </FileNode>
+        <FileNode Name="PROC.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:20.211.185.211:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>20.211.185.211</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>PROC.sql</FullPath>
+        </FileNode>
         <FileNode Name="Query.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:20.211.185.211:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>20.211.185.211</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>Query.sql</FullPath>
         </FileNode>
         <FileNode Name="ResetDB.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>ResetDB.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Run PROC.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:20.211.185.211:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>20.211.185.211</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Run PROC.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:20.211.185.211:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>20.211.185.211</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>SQLQuery2.sql</FullPath>
         </FileNode>
         <FileNode Name="TestQuery.sql">
           <AssociatedConnectionMoniker />

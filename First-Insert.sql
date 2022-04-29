@@ -34,7 +34,7 @@ values
 
 GO
 
-insert into ChinhChien.dbo.TaiKhoan (
+insert into ChinhChienVPS.dbo.TaiKhoan (
 TenTaiKhoan,
 MatKhau,
 LoaiTaiKhoan
