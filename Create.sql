@@ -33,8 +33,11 @@ CREATE TABLE NhanVien
   DiaChi NVARCHAR(40),
   LoaiNhanVien varchar(10),
   MaQuan varchar(100),
+  TenTaiKhoan varchar(10), -- ALTER
   CONSTRAINT PK_MaNhanVien PRIMARY KEY (MaNhanVien),
-  CONSTRAINT CK_GIOITINH CHECK (GioiTinh = 'Nam' OR GioiTinh = 'Nu')
+  CONSTRAINT CK_GIOITINH CHECK (GioiTinh = 'Nam' OR GioiTinh = 'Nu'),
+  CONSTRAINT FK_TaiKhoan_TenTaiKhoan -- ALTER
+  FOREIGN key (TenTaiKhoan) REFERENCES TaiKhoan(TenTaiKhoan) -- ALTER
 )
 GO
 
