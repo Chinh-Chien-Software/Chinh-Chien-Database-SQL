@@ -4,19 +4,28 @@ GO
 USE ChinhChienVPS
 GO
 
+create table Quan
+(
+    MaQuan varchar(100),
+    TenQuan nvarchar(30),
+    constraint PK_MaQuan primary key (MaQuan)
+)
+go
+
 CREATE TABLE NhanVien
 (
-  MaNhanVien CHAR(4),
+  MaNhanVien varCHAR(4),
   TenNhanVien NVARCHAR(40),
   LuongTrenGio INT,
-  NgayVaoLam DateTime,
+  NgayVaoLam Date,
   GioiTinh CHAR(3),
-  NgaySinh DateTime,
+  NgaySinh Date,
   SoDienThoai VARCHAR(13),
   DiaChi NVARCHAR(40),
   LoaiNhanVien varchar(10),
-  CONSTRAINT PK_NhanVien_MaNhanVien PRIMARY KEY (MaNhanVien),
-  CONSTRAINT CK_GT CHECK (GioiTinh = 'Nam' OR GioiTinh = 'Nu')
+  MaQuan varchar(100),
+  CONSTRAINT PK_MaNhanVien PRIMARY KEY (MaNhanVien),
+  CONSTRAINT CK_GIOITINH CHECK (GioiTinh = 'Nam' OR GioiTinh = 'Nu')
 )
 GO
 
@@ -27,7 +36,8 @@ CREATE TABLE ChinhChienVPS.dbo.TaiKhoan
   LoaiTaiKhoan NVARCHAR(10),
   UIMode INT,
   CONSTRAINT PK_TenTaiKhoan PRIMARY KEY (TenTaiKhoan),
-  CONSTRAINT CK_UIMODE CHECK (UIMode >= 0 and UIMode <=2) -- 0 is Light Mode, 1 is Dark Mode, 2 is follow System Setting
+  CONSTRAINT CK_UIMODE CHECK (UIMode >= 0 and UIMode <=2)
+  -- 0 is Light Mode, 1 is Dark Mode, 2 is follow System Setting
 )
 GO
 
@@ -92,9 +102,25 @@ CREATE TABLE HoaDon
 )
 Go
 
-CREATE TABLE ThongTinHoaDon
+CREATE TABLE ChiTietHoaDon
 (
 	MaSanPham VARCHAR(3),
 	MaHoaDon VARCHAR(10),
 	SoLuong INT
+)
+go
+
+create table TruyCapQuan
+(
+    MaQuan varchar(100),
+    TenTaiKhoan varchar(10),
+    Quyen varchar(30)
+)
+go
+
+create table ThanhPhanSanPham
+(
+    MaSanPham VARCHAR(3),
+    MaVatLieu VARCHAR(4),
+    SoLuong int,
 )

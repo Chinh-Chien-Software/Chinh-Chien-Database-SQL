@@ -67,16 +67,10 @@
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>Run PROC.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery2.sql">
+        <FileNode Name="TestQuery.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:20.211.185.211:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>20.211.185.211</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>SQLQuery2.sql</FullPath>
-        </FileNode>
-        <FileNode Name="TestQuery.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
           <FullPath>TestQuery.sql</FullPath>
         </FileNode>
       </Items>
