@@ -12,6 +12,15 @@ create table Quan
 )
 go
 
+create table TaiKhoan
+(
+    TenTaiKhoan varchar(10),
+    MatKhau varchar(10) not null,
+    UIMode int,
+    Email varchar(50) --Thêm bởi ALTER
+    CONSTRAINT PK_TenTaiKhoan PRIMARY key (TenTaiKhoan)
+)
+
 CREATE TABLE NhanVien
 (
   MaNhanVien varCHAR(4),
