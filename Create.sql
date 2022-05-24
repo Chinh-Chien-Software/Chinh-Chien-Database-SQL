@@ -130,9 +130,10 @@ create table TruyCapQuan
 )
 go
 
-create table ThanhPhanSanPham
+create table ThanhPhanSanPham -- Thành phần của Sản phẩm
 (
     MaSanPham VARCHAR(3),
     MaVatLieu VARCHAR(4),
     SoLuong int,
+    constraint FK
 )
