@@ -130,9 +130,15 @@ create table TruyCapQuan
 )
 go
 
-create table ThanhPhanSanPham
+create table ThanhPhanSanPham -- Thành phần của Sản phẩm
 (
-    MaSanPham VARCHAR(3),
-    MaVatLieu VARCHAR(4),
+    MaSanPham VARCHAR(3) not null,
+    MaVatLieu VARCHAR(4) not null,
     SoLuong int,
+    constraint FK_SanPham_MaSanPham
+    FOREIGN key (MaSanPham) REFERENCES SanPham(MaSanPham),
+    constraint FK_VatLieu_MaVatLieu
+    FOREIGN key (MaVatLieu) REFERENCES VatLieu(MaVatLieu),
+    CONSTRAINT PK_ThanhPhanSanPham -- Alter
+    PRIMARY KEY (MaSanPham, MaVatLieu) -- Alter
 )
