@@ -1,5 +1,6 @@
 USE ChinhChienVPS
 GO
+
 create proc CreateAccount
 @tentaikhoan char(10),
 @matkhau varchar(10),
