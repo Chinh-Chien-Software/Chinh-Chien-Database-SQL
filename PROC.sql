@@ -11,7 +11,3 @@ BEGIN
 INSERT INTO ChinhChienVPS.dbo.TaiKhoan VALUES
 (@tentaikhoan, @matkhau, @loaitaikhoan, @uimode)
 END
-
-USE CUPID
-GO
-SELECT * FROM NGUOI_DUNG where TAI_KHOAN = 'admin1'
